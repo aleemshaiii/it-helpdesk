@@ -43,13 +43,8 @@ it-helpdesk-agent/
 
 🚀 Local Setup & Run Instructions
 
-1. Clone the Repository
 
-git clone [https://github.com/arfathkkhan434-tech/it-helpdesk-agent.git](https://github.com/arfathkkhan434-tech/it-helpdesk-agent.git)
-cd it-helpdesk-agent
-
-
-2. Configure Environment Variables
+Configure Environment Variables
 Create a new file named `.env` in the root directory and add your private credentials.
 
 GOOGLE_API_KEY="your_google_api_key_here"
@@ -57,18 +52,18 @@ EMAIL_ADDRESS="your_sender_email@gmail.com"
 EMAIL_APP_PASSWORD="your_google_app_password_here"
 
 
-3. Install Dependencies
+Install Dependencies
 
 pip install -r requirements.txt
 
 
-4. Start the Backend Server (FastAPI)
+Start the Backend Server (FastAPI)
 Open a terminal and start Uvicorn to host the API and databases:
 
 python -m uvicorn backend.app:app --reload --port 8000
 
 
-5. Start the Frontend Dashboard (Streamlit)
+Start the Frontend Dashboard (Streamlit)
 Open a **second, separate terminal** and launch the UI:
 
 streamlit run frontend/streamlit_app.py
